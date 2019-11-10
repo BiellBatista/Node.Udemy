@@ -1,20 +1,26 @@
 {
-  "name": "adonis-api-app",
-  "version": "4.1.0",
+  "name": "ecommerce-realtime",
+  "version": "1.0.0",
   "adonis-version": "4.1.0",
   "description": "Adonisjs boilerplate for API server with pre-configured JWT",
+  "author": "Gabriel Batista <gabriel.texteis@gmail.com>",
+  "license": "MIT",
   "main": "index.js",
+  "private": true,
   "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
     "start": "node server.js",
-    "test": "node ace test"
+    "test": "node ace test",
+    "dev": "nodemon --inspect=localhost:9229 server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://biellbatista@bitbucket.org/biellbatista/node_udemy.git"
   },
   "keywords": [
     "adonisjs",
     "adonis-app"
   ],
-  "author": "",
-  "license": "UNLICENSED",
-  "private": true,
   "dependencies": {
     "@adonisjs/ace": "^5.0.8",
     "@adonisjs/auth": "^3.0.7",
@@ -31,7 +37,8 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^1.19.4"
   },
   "autoload": {
     "App": "./app"

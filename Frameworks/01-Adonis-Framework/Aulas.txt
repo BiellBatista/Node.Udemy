@@ -1,4 +1,6 @@
 Ecommerce Real Time com Node.js e Adonis Framework
 	01 - Introdução
 		01 - Requisitos Iniciais
-		
+		02 - Ferramentas
+		03 - Instalação do Projeto
+		04 - Configuração do Projeto - 1

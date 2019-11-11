@@ -7,7 +7,7 @@ class CouponUserSchema extends Schema {
   up() {
     this.create('coupon_user', table => {
       table.increments();
-      tabke.integer('coupon_id').unsigned();
+      table.integer('coupon_id').unsigned();
       table.integer('user_id').unsigned();
       table.timestamps();
 

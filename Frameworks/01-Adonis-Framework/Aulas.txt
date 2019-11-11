@@ -15,3 +15,4 @@ Ecommerce Real Time com Node.js e Adonis Framework
 		12 - Categorias e Produtos
 		13 - Cupons de Desconto
 		14 - Itens de Pedido
+		15 - Alteração de Senhas

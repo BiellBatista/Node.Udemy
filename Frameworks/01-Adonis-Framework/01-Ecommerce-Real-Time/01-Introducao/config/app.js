@@ -1,10 +1,9 @@
-'use strict'
+'use strict';
 
 /** @type {import('@adonisjs/framework/src/Env')} */
-const Env = use('Env')
+const Env = use('Env');
 
 module.exports = {
-
   /*
   |--------------------------------------------------------------------------
   | Application Name
@@ -81,7 +80,6 @@ module.exports = {
     |
     */
     jsonpCallback: 'callback',
-
 
     /*
     |--------------------------------------------------------------------------
@@ -188,7 +186,8 @@ module.exports = {
     | Available drivers are: `file` and `console`.
     |
     */
-    transport: 'console',
+    //posso usar vários transport. Neste caso, falando para escrever em um arquivo
+    transport: 'file',
 
     /*
     |--------------------------------------------------------------------------
@@ -218,8 +217,8 @@ module.exports = {
     */
     file: {
       driver: 'file',
-      name: 'adonis-app',
-      filename: 'adonis.log',
+      name: 'ecommerce-realtime',
+      filename: 'ecommerce-error.log',
       level: 'info'
     }
   },
@@ -240,4 +239,4 @@ module.exports = {
     path: '/',
     maxAge: 7200
   }
-}
+};

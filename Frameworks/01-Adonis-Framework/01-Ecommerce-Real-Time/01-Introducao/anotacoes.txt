@@ -1,0 +1,2 @@
+09 - Instalação dos Pacotes Necessários e de Terceiros
+- Após a instalação dos pacotes com o adonis install, o adonis pega o mesmo e cria alguns arquivos de ligações. Por exemplo, se o pacote tiver configurações, o adonis cria os arquivos config na pasta config

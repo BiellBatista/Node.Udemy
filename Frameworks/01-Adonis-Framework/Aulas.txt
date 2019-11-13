@@ -20,4 +20,5 @@ Ecommerce Real Time com Node.js e Adonis Framework
 	03 - Models e Relacionamentos
 		17 - User Model
 		18 - Password Reset Model
-		19 - 
+		19 - Image Model
+		20 - 

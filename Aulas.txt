@@ -1,4 +1,10 @@
 Adonis Framework
 	Ecommerce Real Rime com Node.js e Adonis Framework
 		01 - Introdução
+		02 - Banco de Dados e Migrations
+		03 - Models e Relacionamentos
+		04 - Model Factories e Seeders
+		05 - Roteamento e Controllers
+		06 - Autenticação do Sistema
+		07 - Categories Controller para admins
 -------------------------------------------------------------------------------------------------------------------------

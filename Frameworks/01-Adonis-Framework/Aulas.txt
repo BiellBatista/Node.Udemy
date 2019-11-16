@@ -35,3 +35,5 @@ Ecommerce Real Time com Node.js e Adonis Framework
 		29 - Rotas de Autenticação
 		30 - Rotas de Administração
 		31 - Rotas do Cliente
+	06 - Autenticação do Sistema
+		32 - Cadastro de Usuários

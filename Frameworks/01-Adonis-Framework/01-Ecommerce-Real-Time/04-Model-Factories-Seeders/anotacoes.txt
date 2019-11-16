@@ -1,0 +1,1 @@
+10 - A ORM do Adonis foi feita em cima do KNEXJS.

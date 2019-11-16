@@ -21,6 +21,8 @@ Route.get('/', () => {
 });
 
 /**
- * Importa as rotas de autenticações
+ * Importa as rotas.
+ * Devo trazer tudo par ao index.js
  */
 require('./auth');
+require('./admin');

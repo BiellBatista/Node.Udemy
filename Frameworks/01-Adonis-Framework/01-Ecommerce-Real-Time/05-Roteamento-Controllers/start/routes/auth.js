@@ -8,7 +8,7 @@ const Route = use('Route');
  */
 
 //agrupando as rotas em prefixo ou namespace
-//o namespace serve para indicar que o Adonis irá buscar os controllers da rota no modulo Auth
+//o namespace serve para indicar que o Adonis irá buscar os controllers da rota na pasta Auth
 //prefixo serve para adicionar um padrão. Exemplo, GET /v1/auth/nomeController
 Route.group(() => {
   Route.post('register', 'AuthController.register').as('auth.register');

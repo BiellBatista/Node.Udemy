@@ -1,1 +1,2 @@
 10 - A ORM do Adonis foi feita em cima do KNEXJS.
+25 - Blueprint dos Models (Models Factory) são dados falso, usados para testar.

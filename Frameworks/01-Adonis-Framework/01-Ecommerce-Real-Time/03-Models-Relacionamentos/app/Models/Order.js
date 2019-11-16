@@ -4,6 +4,17 @@
 const Model = use('Model');
 
 class Order extends Model {
+  static boot() {
+    super.boot();
+
+    //adicionando uma regra de negócio
+    //a regra (o método updateValues) será acionado após uma procura no banco.
+    //o afterFind retorna um pedido (objeto) para o hook
+    this.addHook('afterFind', 'OrderHook.updateValues');
+    //a função afterPaginate retorna todos os pedidos (objetos) do banco para o hook
+    this.addHook('afterPaginate', 'OrderHook.updateCollectionValues');
+  }
+
   //um pedido tem N itens
   items() {
     return this.hasMany('App/Models/OrderItem');

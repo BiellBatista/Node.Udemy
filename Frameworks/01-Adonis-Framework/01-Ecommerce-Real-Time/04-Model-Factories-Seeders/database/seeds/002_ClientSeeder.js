@@ -19,7 +19,7 @@ class ClientSeeder {
   async run() {
     //execute o método find, usando o cmapo slug
     const role = await Role.findBy('slug', 'client');
-    const clients = await Factory.model('App/Model/User').createMany(30);
+    const clients = await Factory.model('App/Models/User').createMany(30);
     //adicionando a função client nos 30 modelos de usuário
     await Promise.all(
       clients.map(async client => {

@@ -38,3 +38,4 @@ Ecommerce Real Time com Node.js e Adonis Framework
 	06 - Autenticação do Sistema
 		32 - Cadastro de Usuários
 		33 - Login
+		34 - Re-Autenticação com Refresh Token

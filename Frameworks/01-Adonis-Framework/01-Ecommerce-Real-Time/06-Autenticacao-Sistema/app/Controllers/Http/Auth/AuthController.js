@@ -35,7 +35,21 @@ class AuthController {
     return response.send({ data });
   }
 
-  async refreshToken({ request, response, auth }) {}
+  async refreshToken({ request, response, auth }) {
+    //pegando o refresh_token no body
+    let refresh_token = request.input('refresh_token');
+
+    //verificando se o refresh_token está no head
+    if (!refresh_token) {
+      refresh_token = request.header('refresh_token');
+    }
+
+    const user = await auth
+      .newRefreshToken()
+      .generateForRefreshToken(refresh_token); //gerando um novo token
+
+    return response.send({ data: user });
+  }
 
   async logout({ request, response, auth }) {}
 

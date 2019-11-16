@@ -32,4 +32,4 @@ Ecommerce Real Time com Node.js e Adonis Framework
 		27 - Categories e Product Seeders
 	05 - Roteamento e Controllers
 		28 - Configuração do Modelo de Roteamento
-		29 - 
+		29 - Rotas de Autenticação

@@ -1,0 +1,13 @@
+{
+  "semi": true,
+  "indent": [2, 4],
+  "no-return-await": 0,
+  "space-before-function-paren": [2, {
+    "named": "never",
+    "anonymous": "never",
+    "asyncArrow": "always"
+  }],
+  "arrowParens": "avoid",
+  "singleQuote": true,
+  "template-curly-spacing": [2, "always"]
+}

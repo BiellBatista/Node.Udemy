@@ -23,3 +23,4 @@ Ecommerce Real Time com Node.js e Adonis Framework
 		19 - Image Model
 		20 - Categorias e Produtos
 		21 - Cupons de Desconto
+		22 - Order e OrderItem

@@ -51,7 +51,20 @@ class AuthController {
     return response.send({ data: user });
   }
 
-  async logout({ request, response, auth }) {}
+  async logout({ request, response, auth }) {
+    //pegando o refresh_token no body
+    let refresh_token = request.input('refresh_token');
+
+    //verificando se o refresh_token está no head
+    if (!refresh_token) {
+      refresh_token = request.header('refresh_token');
+    }
+
+    await auth.authenticator('jwt').revokeTokens([refresh_token], true);
+    //invalidando o token e apagando ele da base (true apaga ele da base)
+
+    return response.status(204).send({});
+  }
 
   async forgot({ request, response }) {}
 

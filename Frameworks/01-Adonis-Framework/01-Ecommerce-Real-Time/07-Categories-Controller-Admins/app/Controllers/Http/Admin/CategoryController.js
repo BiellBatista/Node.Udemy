@@ -3,6 +3,7 @@
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
+const Category = use('App/Models/Category');
 
 /**
  * Resourceful controller for interacting with categories
@@ -16,8 +17,17 @@ class CategoryController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    * @param {View} ctx.view
+   * @param {Object} ctx.pagination
    */
-  async index({ request, response, view }) {}
+  async index({ request, response, view, pagination }) {
+    // pegando os dados na URL da requisição
+    // const page = request.input('page');
+    // const limit = request.input('limit');
+    // const categories = await Category.query().paginate(page, limit);
+    const categories = await Category.query().paginate(pagination.page, pagination.limit);
+
+    return response.send(categories);
+  }
 
   /**
    * Create/save a new category.

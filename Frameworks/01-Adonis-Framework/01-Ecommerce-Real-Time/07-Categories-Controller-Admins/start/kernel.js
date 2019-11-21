@@ -11,11 +11,13 @@ const Server = use('Server')
 | Global middleware are executed on each http request only when the routes
 | match.
 |
+| Um Middleware global será executado em toda a requisição
 */
 const globalMiddleware = [
   'Adonis/Middleware/BodyParser',
   'App/Middleware/ConvertEmptyStringsToNull',
-  'Adonis/Acl/Init'
+  'Adonis/Acl/Init',
+  'App/Middleware/Pagination'
 ]
 
 /*

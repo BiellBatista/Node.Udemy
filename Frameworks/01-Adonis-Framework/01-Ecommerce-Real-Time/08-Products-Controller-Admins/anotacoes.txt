@@ -1,0 +1,3 @@
+10 - A ORM do Adonis foi feita em cima do KNEXJS.
+25 - Blueprint dos Models (Models Factory) são dados falso, usados para testar.
+26 - Os arquivos das Roles são executados de forma sequêncial. Ou seja, se o arquivo A depender do B, irá dar erro, porque o A vem antes, na ordem alfabeta, do B. Para contornar este problema, devo colocar número para que o arquivo fique no lugar desejado

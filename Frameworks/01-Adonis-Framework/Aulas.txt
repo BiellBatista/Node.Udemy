@@ -45,3 +45,4 @@ Ecommerce Real Time com Node.js e Adonis Framework
 		37 - Listagem e Paginação
 		38 - Melhorias na listagem e busca por título
 		39 - Criando Categorias
+		40 - Exibindo e Deletando Categorias

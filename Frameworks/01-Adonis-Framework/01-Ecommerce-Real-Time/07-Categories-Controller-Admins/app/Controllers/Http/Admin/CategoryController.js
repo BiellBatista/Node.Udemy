@@ -24,7 +24,20 @@ class CategoryController {
     // const page = request.input('page');
     // const limit = request.input('limit');
     // const categories = await Category.query().paginate(page, limit);
-    const categories = await Category.query().paginate(pagination.page, pagination.limit);
+
+    const title = request.input('title');
+
+    const query = Category.query();
+
+    if (title) {
+      query.where('title', 'LIKE', `%${title}%`);
+    }
+
+    // const categories = await Category.query().paginate(
+    const categories = await query.paginate(
+      pagination.page,
+      pagination.limit
+    );
 
     return response.send(categories);
   }

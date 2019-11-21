@@ -88,8 +88,8 @@ class CategoryController {
    */
   async update({ params: { id }, request, response }) {
     const category = await Category.findOrFail(id);
-    const { title, description, image_id } = request.all;
-    category.merge({ tile, description, image_id });
+    const { title, description, image_id } = request.all();
+    category.merge({ title, description, image_id });
 
     await category.save();
 

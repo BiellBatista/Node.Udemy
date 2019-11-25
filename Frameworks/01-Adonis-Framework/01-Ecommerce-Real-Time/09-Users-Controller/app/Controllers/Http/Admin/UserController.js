@@ -82,7 +82,29 @@ class UserController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async update({ params, request, response }) {}
+  async update({ params: { id }, request, response }) {
+    const user = await User.findOrFail(id);
+
+    try {
+      const userData = request.only([
+        'name',
+        'surname',
+        'email',
+        'password',
+        'image_id'
+      ]);
+
+      user.merge(userData);
+
+      await user.save();
+
+      return response.send(user);
+    } catch (error) {
+      return response
+        .status(400)
+        .send({ message: 'Não foi possível atualizar este usuário!' });
+    }
+  }
 
   /**
    * Delete a user with id.
@@ -92,7 +114,19 @@ class UserController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async destroy({ params, request, response }) {}
+  async destroy({ params: { id }, request, response }) {
+    const user = await User.findOrFail(id);
+
+    try {
+      await user.delete();
+
+      return response.status(204).send();
+    } catch (error) {
+      return response
+        .status(500)
+        .send({ message: 'Não foi possível deletar esse produto!' });
+    }
+  }
 }
 
 module.exports = UserController;

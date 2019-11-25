@@ -59,3 +59,5 @@ Ecommerce Real Time com Node.js e Adonis Framework
 		49 - Criando e exibindo usuários
 		50 - Atualizando e Destruindo usuários
 		51 - Testando o UserController
+	10 - Criando Helpers
+		52 - String Aleatória

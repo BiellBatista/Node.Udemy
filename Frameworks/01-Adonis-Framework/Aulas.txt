@@ -51,3 +51,4 @@ Ecommerce Real Time com Node.js e Adonis Framework
 	08 - Products Controller para Admin
 		43 - Listagem de Produtos
 		44 - Cadastro de novo produto
+		45 - Atualização de produtos existentes

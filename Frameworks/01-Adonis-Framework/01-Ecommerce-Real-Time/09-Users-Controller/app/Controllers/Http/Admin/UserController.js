@@ -24,7 +24,7 @@ class UserController {
     const query = User.query();
 
     if (name) {
-      query.where('name', 'LIKE', `%${name$}%`);
+      query.where('name', 'LIKE', `%${name}%`);
       query.orWhere('surname', 'LIKE', `%${name}%`);
       query.orWhere('email', 'LIKE', `%${name}%`);
     }
@@ -46,7 +46,7 @@ class UserController {
     try {
       const userData = request.only([
         'name',
-        'username',
+        'surname',
         'email',
         'password',
         'image_id'

@@ -2,7 +2,7 @@
 
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
-const Product = require('App/Models/Product');
+const Product = use('App/Models/Product');
 
 /**
  * Resourceful controller for interacting with products
@@ -25,7 +25,7 @@ class ProductController {
       query.where('name', 'LIKE', `%${name}%`);
     }
 
-    const products = await query.paginate(pagination.page, paginaiton.limit);
+    const products = await query.paginate(pagination.page, pagination.limit);
 
     return response.send(products);
   }

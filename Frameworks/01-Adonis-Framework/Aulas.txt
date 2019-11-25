@@ -56,3 +56,4 @@ Ecommerce Real Time com Node.js e Adonis Framework
 		47 - Testes do controller
 	09 - Users Controller
 		48 - Listando usuários
+		49 - Criando e exibindo usuários

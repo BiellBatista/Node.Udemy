@@ -2,7 +2,6 @@
 
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
-/** @typedef {import('@adonisjs/framework/src/View')} View */
 const Category = use('App/Models/Category');
 
 /**
@@ -16,10 +15,9 @@ class CategoryController {
    * @param {object} ctx
    * @param {Request} ctx.request
    * @param {Response} ctx.response
-   * @param {View} ctx.view
    * @param {Object} ctx.pagination
    */
-  async index({ request, response, view, pagination }) {
+  async index({ request, response, pagination }) {
     // pegando os dados na URL da requisição
     // const page = request.input('page');
     // const limit = request.input('limit');
@@ -68,7 +66,6 @@ class CategoryController {
    * @param {object} ctx
    * @param {Request} ctx.request
    * @param {Response} ctx.response
-   * @param {View} ctx.view
    */
   async show({ params: { id }, request, response }) {
     // estou desmontando o objeto na entrada dos argumentos

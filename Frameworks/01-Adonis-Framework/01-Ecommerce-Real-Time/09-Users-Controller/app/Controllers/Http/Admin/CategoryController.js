@@ -15,7 +15,7 @@ class CategoryController {
    * @param {object} ctx
    * @param {Request} ctx.request
    * @param {Response} ctx.response
-   * @param {Object} ctx.pagination
+   * @param {object} ctx.pagination
    */
   async index({ request, response, pagination }) {
     // pegando os dados na URL da requisição

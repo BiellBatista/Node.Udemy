@@ -15,7 +15,7 @@ class ProductController {
    * @param {object} ctx
    * @param {Request} ctx.request
    * @param {Response} ctx.response
-   * @param {Pagination} ctx.pagination
+   * @param {object} ctx.pagination
    */
   async index({ request, response, pagination }) {
     const name = request.input('name');
